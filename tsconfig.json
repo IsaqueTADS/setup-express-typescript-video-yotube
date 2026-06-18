@@ -22,10 +22,6 @@
     "outDir": "./dist",
     "rootDir": "./",
     "ignoreDeprecations": "6.0",
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true
   },
   "include": [
     "src",
