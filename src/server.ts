@@ -31,7 +31,7 @@ app.get("/users", async (req, res) => {
 })
 
 app.post("/user", (req, res) => {
-  const {name, email} = req.body as { name: string, email: string }
+  const {name, email} = req.body as  User
 
 
   return {name, email} as User
