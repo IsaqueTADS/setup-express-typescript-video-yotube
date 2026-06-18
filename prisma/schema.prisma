@@ -16,4 +16,12 @@ model User {
   id    String  @id @default(uuid())
   email String  @unique
   name  String?
+  posts Post[]
+}
+
+model Post {
+  id     String @id @default(uuid())
+  name   String @unique
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
 }

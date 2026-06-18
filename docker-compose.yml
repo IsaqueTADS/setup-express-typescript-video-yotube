@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: setup-express-typescript
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_password
+    ports:
+      - "3306:3306"
