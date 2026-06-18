@@ -118,3 +118,4 @@ dist/
 # Docker
 # ==========================================
 docker-data/v
+/src/generated/prisma

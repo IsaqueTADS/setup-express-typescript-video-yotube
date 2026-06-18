@@ -1,8 +1,9 @@
 import express from "express"
+import "dotenv/config";
 
 
 const app = express()
-const port = 3333
+const port = process.env.PORT 
  
 interface User {
   name: string
